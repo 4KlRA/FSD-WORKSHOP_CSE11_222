@@ -1,0 +1,500 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f4f6f8;
+    color: #1f2937;
+}
+
+
+/* =========================
+   APP
+========================= */
+
+.app {
+    min-height: 100vh;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+.header {
+    background: #111827;
+    color: white;
+    padding: 30px;
+    text-align: center;
+}
+
+.header h1 {
+    font-size: 32px;
+    margin-bottom: 8px;
+}
+
+.header p {
+    color: #9ca3af;
+}
+
+
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.navbar button {
+    padding: 10px 22px;
+    border: 1px solid #4b5563;
+    border-radius: 6px;
+    background: transparent;
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.navbar button:hover {
+    background: #374151;
+}
+
+.navbar .nav-active {
+    background: #2563eb;
+    border-color: #2563eb;
+}
+
+
+/* =========================
+   MAIN CONTAINER
+========================= */
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 30px auto;
+
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+
+/* =========================
+   CARDS
+========================= */
+
+.tester-card,
+.endpoints-card,
+.response-card {
+    background: white;
+    border-radius: 12px;
+    padding: 25px;
+
+    box-shadow:
+        0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+
+/* =========================
+   REQUEST
+========================= */
+
+.request-row {
+    display: flex;
+    gap: 10px;
+}
+
+.request-row select {
+    width: 120px;
+
+    padding: 12px;
+
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+
+    font-weight: bold;
+}
+
+.request-row input {
+    flex: 1;
+
+    padding: 12px;
+
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+
+    font-size: 15px;
+}
+
+.request-row button {
+    padding: 12px 25px;
+
+    background: #2563eb;
+
+    color: white;
+
+    border: none;
+
+    border-radius: 6px;
+
+    cursor: pointer;
+
+    font-weight: bold;
+}
+
+.request-row button:hover {
+    background: #1d4ed8;
+}
+
+.request-row button:disabled {
+    background: #9ca3af;
+
+    cursor: not-allowed;
+}
+
+
+/* =========================
+   REQUEST BODY
+========================= */
+
+.body-section {
+    margin-top: 20px;
+}
+
+.body-section h3 {
+    margin-bottom: 10px;
+}
+
+.body-section textarea {
+    width: 100%;
+
+    min-height: 160px;
+
+    padding: 15px;
+
+    font-family: Consolas, monospace;
+
+    font-size: 14px;
+
+    border: 1px solid #d1d5db;
+
+    border-radius: 6px;
+
+    resize: vertical;
+}
+
+
+/* =========================
+   ENDPOINTS
+========================= */
+
+.endpoint-list {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 10px;
+}
+
+.endpoint {
+    width: 100%;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    padding: 14px;
+
+    background: #f9fafb;
+
+    border: 1px solid #e5e7eb;
+
+    border-radius: 6px;
+
+    cursor: pointer;
+
+    text-align: left;
+
+    font-size: 15px;
+}
+
+.endpoint:hover {
+    background: #f3f4f6;
+}
+
+.endpoint span:first-child {
+    width: 70px;
+
+    font-weight: bold;
+}
+
+
+/* HTTP METHOD COLORS */
+
+.get {
+    color: #16a34a;
+}
+
+.post {
+    color: #2563eb;
+}
+
+.put {
+    color: #ca8a04;
+}
+
+.delete {
+    color: #dc2626;
+}
+
+
+/* =========================
+   RESPONSE
+========================= */
+
+.response-header {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+}
+
+.status {
+    padding: 7px 12px;
+
+    border-radius: 20px;
+
+    font-size: 14px;
+
+    font-weight: bold;
+}
+
+.success {
+    background: #dcfce7;
+
+    color: #166534;
+}
+
+.error {
+    background: #fee2e2;
+
+    color: #991b1b;
+}
+
+.response-card pre {
+    background: #111827;
+
+    color: #e5e7eb;
+
+    padding: 20px;
+
+    border-radius: 8px;
+
+    overflow-x: auto;
+
+    min-height: 150px;
+
+    font-family: Consolas, monospace;
+
+    line-height: 1.6;
+}
+
+
+/* =========================
+   SIGNUP PAGE
+========================= */
+
+.signup-container {
+    min-height: calc(100vh - 170px);
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: flex-start;
+
+    padding: 50px 20px;
+}
+
+.signup-card {
+    width: 100%;
+
+    max-width: 500px;
+
+    background: white;
+
+    padding: 35px;
+
+    border-radius: 12px;
+
+    box-shadow:
+        0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.signup-card h2 {
+    text-align: center;
+
+    margin-bottom: 8px;
+}
+
+.signup-subtitle {
+    text-align: center;
+
+    color: #6b7280;
+
+    margin-bottom: 30px;
+}
+
+
+/* =========================
+   FORM
+========================= */
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+
+    margin-bottom: 7px;
+
+    font-weight: bold;
+}
+
+.form-group input {
+    width: 100%;
+
+    padding: 13px;
+
+    border: 1px solid #d1d5db;
+
+    border-radius: 6px;
+
+    font-size: 15px;
+}
+
+.form-group input:focus {
+    outline: none;
+
+    border-color: #2563eb;
+}
+
+
+/* =========================
+   SIGNUP BUTTON
+========================= */
+
+.signup-button {
+    width: 100%;
+
+    padding: 13px;
+
+    border: none;
+
+    border-radius: 6px;
+
+    background: #2563eb;
+
+    color: white;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+.signup-button:hover {
+    background: #1d4ed8;
+}
+
+.signup-button:disabled {
+    background: #9ca3af;
+
+    cursor: not-allowed;
+}
+
+
+/* =========================
+   SIGNUP STATUS
+========================= */
+
+.signup-status {
+    margin-top: 20px;
+
+    text-align: center;
+
+    padding: 10px;
+
+    border-radius: 6px;
+}
+
+
+/* =========================
+   SIGNUP RESPONSE
+========================= */
+
+.signup-response {
+    margin-top: 25px;
+}
+
+.signup-response h3 {
+    margin-bottom: 10px;
+}
+
+.signup-response pre {
+    background: #111827;
+
+    color: #e5e7eb;
+
+    padding: 15px;
+
+    border-radius: 8px;
+
+    overflow-x: auto;
+
+    font-family: Consolas, monospace;
+
+    line-height: 1.5;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 700px) {
+
+    .request-row {
+        flex-direction: column;
+    }
+
+    .request-row select {
+        width: 100%;
+    }
+
+    .container {
+        width: 95%;
+    }
+
+    .signup-card {
+        padding: 25px;
+    }
+}
